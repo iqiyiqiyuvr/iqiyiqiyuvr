@@ -76,8 +76,9 @@
 # DualSubs.HBOMax.Subtitles.Translate.response
 ^https?:\/\/(.+)\.hbomaxcdn\.com\/videos\/(.+)\.vtt\?(.*)subtype=Translate url script-response-body https://raw.githubusercontent.com/DualSubs/Universal/main/js/DualSubs.Subtitles.Translate.response.js
 
-# Hulu Ad-Block
-^https?:\/\/vodmanifest\.hulustream\.com\/hulu\/v1\/hls\/(multivariant|audio)\/(\d+)\/playlist\.m3u8 url script-response-body https://raw.githubusercontent.com/iqiyiqiyuvr/iqiyiqiyuvr/main/hulu_helper.js
+# Hulu去广告 vodmanifest.hulustream.com  
+^https:\/\/vodmanifest\.hulustream\.com\/hulu\/v\d+\/hls\/(video|audio)\/\d+\/ url script-response-body https://raw.githubusercontent.com/iqiyiqiyuvr/iqiyiqiyuvr/main/hulu_helper.js
+^https:\/\/vodmanifest\.hulustream\.com\/hulu\/v\d+\/hls\/vtt\/\d+\/playlist\.m3u8 url script-response-body https://raw.githubusercontent.com/iqiyiqiyuvr/iqiyiqiyuvr/main/hulu_helper.js
 # DualSubs.Hulu.Master.m3u8.response
 ^https?:\/\/vodmanifest\.hulustream\.com\/hulu\/v1\/hls\/multivariant\/(\d+)\/playlist\.m3u8 url script-response-body https://raw.githubusercontent.com/DualSubs/Universal/main/js/DualSubs.Master.m3u8.response.js
 ^https?:\/\/manifest-dp\.hulustream\.com\/hls\/(\d+)\.m3u8 url script-response-body https://raw.githubusercontent.com/DualSubs/Universal/main/js/DualSubs.Master.m3u8.response.js
